@@ -10,12 +10,41 @@
         android:id="@+id/surface_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    <TextView
-        android:id="@+id/text_view"
-        android:text="No Text"
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
         android:layout_width="match_parent"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/var_button"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scanne die Marke deines Getränks"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
